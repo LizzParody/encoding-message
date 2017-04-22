@@ -27,7 +27,7 @@ function decode(str) {
     if (isNaN(str[i])) {
       result += str[i];
     } else {
-      i += +str[i];
+      i += +str[i];  // add that number to current index in order
     }
    i++;
   }
