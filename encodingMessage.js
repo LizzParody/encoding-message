@@ -12,7 +12,10 @@ function plaintext(str) {
 }
 
 var str = "0h2abe1zy";
-console.log(plaintext(str));
+console.log(plaintext(str)); //prints hey
 
 var str1 = "0h2zyi2467"
-console.log(plaintext(str1));
+console.log(plaintext(str1)); //prints hi7
+
+
+//Other way taking into account the first character
