@@ -19,3 +19,22 @@ console.log(plaintext(str1)); //prints hi7
 
 
 //Other way taking into account the first character
+
+function decode(str) {
+  var i = 0;
+  var result = "";
+  while(i < str.length){
+    if (isNaN(str[i])) {
+      result += str[i];
+    } else {
+      i += +str[i];
+    }
+   i++;
+  }
+ return result;
+}
+
+decode("0h2abe1zy");     // "hey"
+decode("h1oo3asdl2asa"); // "hola"
+decode("3jyhf0i2ikn0d"); // "find"
+
